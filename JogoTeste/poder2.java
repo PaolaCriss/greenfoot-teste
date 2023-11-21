@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class poder2 extends Actor
 {
+    private int tempo = 50;
+    private int atraso = 0;
     /**
      * Act - do whatever the poder2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -37,7 +39,15 @@ public class poder2 extends Actor
     
         getWorld().removeObject(b);
         getWorld().removeObject(this);
+        tempo = 0;
+        if(tempo<1){
+        VencedorAriel world = new VencedorAriel();
+        Greenfoot.setWorld(world);
+            
+        }
         }
     }
-
+    
+    
 }
+

@@ -29,13 +29,14 @@ public class mundo extends World
     {
 
         Counter1 counter1 = new Counter1();
-        addObject(counter1,136,54);
-        Counter2 counter2 = new Counter2();
-        addObject(counter2,852,41);
+        addObject(counter1,788,67);
         Ariel ariel = new Ariel();
-        addObject(ariel,855,396);
+        addObject(ariel,831,424);
+        Counter2 counter2 = new Counter2();
+        addObject(counter2,238,77);
+        counter2.setLocation(257,67);
         vila vila = new vila();
-        addObject(vila,168,425);
+        addObject(vila,184,438);
     }
     
     private GreenfootSound bgMusic= new GreenfootSound("som.wav");

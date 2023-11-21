@@ -6,9 +6,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class poder extends Actor
+public class poder extends Actor 
 {
     GifImage power_ursula = new GifImage("poder_ursula.gif");
+    private int tempo = 50;
+    private int atraso = 0;
     
     /**
      * Act - do whatever the poder wants to do. This method is called whenever
@@ -19,6 +21,8 @@ public class poder extends Actor
         setImage(power_ursula.getCurrentImage());
         moveAtaque();
         acertarAlvo ();
+        //setBackground();
+        prepare();
     }
     public void moveAtaque()
     {
@@ -38,6 +42,25 @@ public class poder extends Actor
     
         getWorld().removeObject(b);
         getWorld().removeObject(this);
+    tempo = 0;
+        if(tempo<1){
+        VencedorVila world = new VencedorVila();
+        Greenfoot.setWorld(world);
+            
+        }
+    
         }
     }
+    
+    
+            
+    private void prepare()
+    {
+    }
 }
+
+    
+    
+    
+
+
